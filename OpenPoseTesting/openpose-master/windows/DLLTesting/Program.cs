@@ -9,7 +9,7 @@ namespace DLLTesting
 {
     class Program
     {
-        [DllImport(@"C:\Users\RHVR3.RHVR3\Desktop\Projects\Jerry\OpenPosePlayground\OpenPoseTesting\openpose-master\windows\DLLTesting\bin\Release\extract_from_image.dll", CallingConvention = CallingConvention.Cdecl)]
+        [DllImport(@"C:\Users\RHVR3.RHVR3\Desktop\Projects\Jerry\OpenPosePlayground\OpenPoseTesting\openpose-master\windows\DLLTesting\bin\extract_from_image.dll", CallingConvention = CallingConvention.Cdecl)]
 
         public static extern int openPoseTutorialPose1();
         static void Main(string[] args)
