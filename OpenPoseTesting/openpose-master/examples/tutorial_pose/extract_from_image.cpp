@@ -8,6 +8,7 @@
     // 1. `core` module: for the Array<float> class that the `pose` module needs
     // 2. `utilities` module: for the error & logging functions, i.e. op::error & op::log respectively
 
+
 // 3rdparty dependencies
 // GFlags: DEFINE_bool, _int32, _int64, _uint64, _double, _string
 #include <gflags/gflags.h>
@@ -33,16 +34,18 @@ DEFINE_int32(logging_level,             3,              "The logging level. Inte
                                                         " 255 will not output any. Current OpenPose library messages are in the range 0-4: 1 for"
                                                         " low priority messages and 4 for important ones.");
 // Producer ///////////////////////////////////////////////////////////////////////////
-DEFINE_string(image_path,               "examples/media/COCO_val2014_000000000192.jpg",     "Process the desired image.");
-//DEFINE_string(image_path, "C:/Users/RHVR3.RHVR3/Desktop/Projects/Jerry/OpenPosePlayground/OpenPoseTesting/COCO_val2014_000000000192.jpg", "Process the desired image.");
 
+
+DEFINE_string(image_path, "C:/Users/RHVR3.RHVR3/Desktop/Projects/Jerry/Masquerade-OpenPose/OpenPoseTesting/COCO_image.jpg",     "Process the desired image.");
+//DEFINE_string(image_path, "C:/Users/RHVR3.RHVR3/Desktop/Projects/Jerry/OpenPosePlayground/OpenPoseTesting/COCO_val2014_000000000192.jpg", "Process the desired image.");
 
 
 
 // OpenPose
 DEFINE_string(model_pose,               "COCO",         "Model to be used. E.g. `COCO` (18 keypoints), `MPI` (15 keypoints, ~10% faster), "
                                                         "`MPI_4_layers` (15 keypoints, even faster but less accurate).");
-DEFINE_string(model_folder,             "models/",      "Folder path (absolute or relative) where the models (pose, face, ...) are located.");
+DEFINE_string(model_folder,				"C:/Users/RHVR3.RHVR3/Desktop/Projects/Jerry/Masquerade-OpenPose/OpenPoseTesting/openpose-master/models/",      
+														"Folder path (absolute or relative) where the models (pose, face, ...) are located.");
 DEFINE_string(net_resolution,           "-1x368",       "Multiples of 16. If it is increased, the accuracy potentially increases. If it is"
                                                         " decreased, the speed increases. For maximum speed-accuracy balance, it should keep the"
                                                         " closest aspect ratio possible to the images or videos to be processed. Using `-1` in"
@@ -155,7 +158,7 @@ extern "C" {
 
 
 extern "C" {
-	__declspec(dllexport) int openPoseTutorialPose1()
+	__declspec(dllexport) float openPoseDemo()
 	{
 		std::cout << "I'm here" << std::endl;
 
@@ -239,11 +242,13 @@ extern "C" {
 	}
 }
 
+/*
 int main(int argc, char *argv[])
 {
     // Parsing command line flags
     gflags::ParseCommandLineFlags(&argc, &argv, true);
 
     // Running openPoseTutorialPose1
-    return openPoseTutorialPose1();
+    return openPoseDemo();
 }
+*/
