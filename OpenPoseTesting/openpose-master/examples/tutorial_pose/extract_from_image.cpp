@@ -37,7 +37,7 @@ DEFINE_int32(logging_level,             3,              "The logging level. Inte
 
 
 DEFINE_string(image_path, "C:/Users/RHVR3.RHVR3/Desktop/Projects/Jerry/Masquerade-OpenPose/OpenPoseTesting/COCO_image.jpg",     "Process the desired image.");
-//DEFINE_string(image_path, "C:/Users/RHVR3.RHVR3/Desktop/Projects/Jerry/OpenPosePlayground/OpenPoseTesting/COCO_val2014_000000000192.jpg", "Process the desired image.");
+//DEFINE_string(image_path, "/COCO_image.jpg",     "Process the desired image.");
 
 
 
@@ -45,6 +45,8 @@ DEFINE_string(image_path, "C:/Users/RHVR3.RHVR3/Desktop/Projects/Jerry/Masquerad
 DEFINE_string(model_pose,               "COCO",         "Model to be used. E.g. `COCO` (18 keypoints), `MPI` (15 keypoints, ~10% faster), "
                                                         "`MPI_4_layers` (15 keypoints, even faster but less accurate).");
 DEFINE_string(model_folder,				"C:/Users/RHVR3.RHVR3/Desktop/Projects/Jerry/Masquerade-OpenPose/OpenPoseTesting/openpose-master/models/",      
+//DEFINE_string(model_folder,				"Dependencies/models/",      
+
 														"Folder path (absolute or relative) where the models (pose, face, ...) are located.");
 DEFINE_string(net_resolution,           "-1x368",       "Multiples of 16. If it is increased, the accuracy potentially increases. If it is"
                                                         " decreased, the speed increases. For maximum speed-accuracy balance, it should keep the"
@@ -69,93 +71,6 @@ DEFINE_double(render_threshold,         0.05,           "Only estimated keypoint
                                                         " more false positives (i.e. wrong detections).");
 DEFINE_double(alpha_pose,               0.6,            "Blending factor (range 0-1) for the body part rendering. 1 will show it completely, 0 will"
                                                         " hide it. Only valid for GPU rendering.");
-
-////////////////////////////////////////////////////////////////////////
-/*
-extern "C" {
-	__declspec(dllexport) int unityTest0() {
-		return 15;
-	}
-
-	
-	__declspec(dllexport) const op::Array<float> unityTest1() //TODO convert data structure
-	{
-		op::log("OpenPose Library Tutorial - Example 1.", op::Priority::High);
-		// ------------------------- INITIALIZATION -------------------------
-		// Step 1 - Set logging level
-		// - 0 will output all the logging messages
-		// - 255 will output nothing
-		op::check(0 <= FLAGS_logging_level && FLAGS_logging_level <= 255, "Wrong logging_level value.",
-			__LINE__, __FUNCTION__, __FILE__);
-		op::ConfigureLog::setPriorityThreshold((op::Priority)FLAGS_logging_level);
-		op::log("", op::Priority::Low, __LINE__, __FUNCTION__, __FILE__);
-		// Step 2 - Read Google flags (user defined configuration)
-		// outputSize
-		const auto outputSize = op::flagsToPoint(FLAGS_output_resolution, "-1x-1");
-		// netInputSize
-		const auto netInputSize = op::flagsToPoint(FLAGS_net_resolution, "-1x368");
-		// poseModel
-		const auto poseModel = op::flagsToPoseModel(FLAGS_model_pose);
-		// Check no contradictory flags enabled
-		if (FLAGS_alpha_pose < 0. || FLAGS_alpha_pose > 1.)
-			op::error("Alpha value for blending must be in the range [0,1].", __LINE__, __FUNCTION__, __FILE__);
-		if (FLAGS_scale_gap <= 0. && FLAGS_scale_number > 1)
-			op::error("Incompatible flag configuration: scale_gap must be greater than 0 or scale_number = 1.",
-				__LINE__, __FUNCTION__, __FILE__);
-		// Enabling Google Logging
-		const bool enableGoogleLogging = true;
-		// Logging
-		op::log("", op::Priority::Low, __LINE__, __FUNCTION__, __FILE__);
-		// Step 3 - Initialize all required classes
-		op::ScaleAndSizeExtractor scaleAndSizeExtractor(netInputSize, outputSize, FLAGS_scale_number, FLAGS_scale_gap);
-		op::CvMatToOpInput cvMatToOpInput;
-		op::CvMatToOpOutput cvMatToOpOutput;
-		op::PoseExtractorCaffe poseExtractorCaffe{ poseModel, FLAGS_model_folder,
-			FLAGS_num_gpu_start,{}, op::ScaleMode::ZeroToOne, enableGoogleLogging };
-		op::PoseCpuRenderer poseRenderer{ poseModel, (float)FLAGS_render_threshold, !FLAGS_disable_blending,
-			(float)FLAGS_alpha_pose };
-		op::OpOutputToCvMat opOutputToCvMat;
-		op::FrameDisplayer frameDisplayer{ "OpenPose Tutorial - Example 1", outputSize };
-		// Step 4 - Initialize resources on desired thread (in this case single thread, i.e. we init resources here)
-		poseExtractorCaffe.initializationOnThread();
-		poseRenderer.initializationOnThread();
-
-		// ------------------------- POSE ESTIMATION AND RENDERING -------------------------
-		// Step 1 - Read and load image, error if empty (possibly wrong path)
-		// Alternative: cv::imread(FLAGS_image_path, CV_LOAD_IMAGE_COLOR);
-		cv::Mat inputImage = op::loadImage(FLAGS_image_path, CV_LOAD_IMAGE_COLOR);
-		if (inputImage.empty())
-			op::error("Could not open or find the image: " + FLAGS_image_path, __LINE__, __FUNCTION__, __FILE__);
-		const op::Point<int> imageSize{ inputImage.cols, inputImage.rows };
-		// Step 2 - Get desired scale sizes
-		std::vector<double> scaleInputToNetInputs;
-		std::vector<op::Point<int>> netInputSizes;
-		double scaleInputToOutput;
-		op::Point<int> outputResolution;
-		std::tie(scaleInputToNetInputs, netInputSizes, scaleInputToOutput, outputResolution)
-			= scaleAndSizeExtractor.extract(imageSize);
-		// Step 3 - Format input image to OpenPose input and output formats
-		const auto netInputArray = cvMatToOpInput.createArray(inputImage, scaleInputToNetInputs, netInputSizes);
-		auto outputArray = cvMatToOpOutput.createArray(inputImage, scaleInputToOutput, outputResolution);
-		// Step 4 - Estimate poseKeypoints
-		poseExtractorCaffe.forwardPass(netInputArray, imageSize, scaleInputToNetInputs);
-		const auto poseKeypoints = poseExtractorCaffe.getPoseKeypoints();
-		return poseKeypoints;
-	}
-	
-}
-*/
-
-/////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
 
 extern "C" {
 	__declspec(dllexport) float openPoseDemo()
