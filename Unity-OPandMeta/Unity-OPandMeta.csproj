@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A2C55F40-6F62-849A-354D-C1502FC57751}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2017.3.0f3</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomation">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="FlatBuffers">
+      <HintPath>Assets/MetaSDK/Plugins/Managed/FlatBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="FullSerializer">
+      <HintPath>Assets/MetaSDK/Plugins/Managed/FullSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="MetaAnalytics">
+      <HintPath>Assets/MetaSDK/Plugins/Managed/MetaAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="MetaDevMode-CSharp">
+      <HintPath>Assets/MetaSDK/Plugins/Managed/MetaDevMode-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets/MetaSDK/Plugins/Managed/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleJSON">
+      <HintPath>Assets/MetaSDK/Plugins/Managed/SimpleJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>C:/Users/RHVR3.RHVR3/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>C:/Users/RHVR3.RHVR3/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/Editor/UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/RHVR3.RHVR3/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>C:/Users/RHVR3.RHVR3/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/RHVR3.RHVR3/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>C:/Users/RHVR3.RHVR3/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/RHVR3.RHVR3/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\MetaSDK\Meta\CocoLauncher\Flatbuffers\Types\frame_hands.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\CocoLauncher\Flatbuffers\Types\hand_data.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\CocoLauncher\Flatbuffers\Types\header.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\CocoLauncher\Flatbuffers\Types\image.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\CocoLauncher\Flatbuffers\Types\pose.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\CocoLauncher\Flatbuffers\Types\transform.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\CocoLauncher\Scripts\KernelCocoLauncherModule.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\CocoLauncher\Scripts\MetaCocoInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\CocoLauncher\Scripts\MetaCocoInteropExtensions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\CocoLauncher\Scripts\MetaKernelCocoInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Compositor\Scripts\MetaCompositor.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Compositor\Scripts\MetaCompositorInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\AudioEventTrigger.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Broadcast\BaseMetaButtonEventBroadcaster.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Broadcast\BaseMetaButtonInteractionObject.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Broadcast\ButtonBroadcastType.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Broadcast\IOnMetaButtonEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Broadcast\MetaButtonEventBroadcaster.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Broadcast\MetaButtonGameObjectEventBroadcaster.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Broadcast\MetaButtonGeneralEventBroadcaster.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Broadcast\MetaButtonIndividualEventBroadcaster.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Broadcast\MetaButtonUnityEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\ButtonState.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\ButtonType.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\IMetaButton.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\IMetaButtonEventProvider.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Implementation\MetaButtonVolumeController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Implementation\MetaButtonWebCamStillImageController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Implementation\SoundEffectTrigger.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\MetaButton.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\MetaButtonEventProvider.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\MetaButtonsController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Source\EditorMetaButtonEventInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Source\IMetaButtonEventInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\Buttons\Source\MetaButtonEventInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\CanvasCursor.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\CanvasPressIndicator.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\EventCamera.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\EventSystemUtility.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\IEventCamera.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\MetaHandEventData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\MetaHandGraphicsRaycaster.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\PointCloudInfo.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\RingSegment.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\ScaleEvents.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\ScaleMeshToParentRectTransform.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\ScaleSpriteRendererToTransform.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\EventSystem\Scripts\UIEventTrigger.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Attributes\ReadonlyAttribute.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\BoundaryChecker.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\DataStructures\CenterHandFeature.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\DataStructures\Hand.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\DataStructures\HandFeature.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\DataStructures\PalmState\PalmState.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\DataStructures\PalmState\PalmStateCommand.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\DataStructures\PalmState\PalmStateMachine.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\DataStructures\TopHandFeature.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Events\GameObjectEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Events\GrabEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Events\HandFeatureEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Events\HandTriggerEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\GridBox.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\HandCursor.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\HandObjectReferences.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\HandTrigger.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\IHandObjectReferences.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\GrabInteraction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\Interaction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\InteractionEvents.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\InteractionOrder.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\InteractionOrderItem.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\InteractionState.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\Interface\IInteractibleObject.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\LocalThreshold.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\MetaInteractionData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\OrbitRotateInteraction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\SwipeDirections.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\SwipeEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\TurnTableInteraction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\TurnTableSwipeInteraction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\TwoHandGrabInteraction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\TwoHandGrabRotateInteraction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\TwoHandGrabScaleInteraction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\TwoHandGrabSwitchRotationInteraction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\TwoHandInteraction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Interactions\TwoHandScaleInteraction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Utility\HandFeatureType.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Utility\HandFeatureUtil.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Utility\HandUtil.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Utility\InteractionVisualManager.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Utility\MetaCubeStateVisualsManager.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Utility\SetPropertyUtility.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\HandInput\Scripts\Utility\ToggleMaterialColor.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\Hands\HandData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\Hands\HandType.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\PointCloud\PointCloudData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\PointCloud\PointCloudDataType.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\PointCloud\PointCloudInteropData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\PointCloud\PointCloudInteropMetaData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\PointCloud\PointCloudMetaData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\PointCloud\PointXYZ.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\PointCloud\PointXYZConfidence.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\PointCloud\PointXYZRGBA.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\DataStructs\SensorMetaData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\HandKernelInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\HandsModule.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\HandsProvider.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Helpers\InteractionEngineLogging.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Helpers\PointCloudDataLogging.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\InteractionEngine.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\InteractionEngineFactory.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Playback\Generic\GenericDirectoryPlayback.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Playback\Generic\GenericFilePlayback.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Playback\Generic\IFileParser.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Playback\Generic\ThreadedDirectoryPlayback.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Playback\PointCloud\PCDExtensions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Playback\PointCloud\PCDParser.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Playback\PointCloud\PCDParserXYZC.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Playback\PointCloud\PlaybackPointCloudSource.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Playback\PointCloud\ThreadedPlaybackPointCloudSource.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Settings\CloudGeneratorOptions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Settings\DepthDataCleanerOptions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Settings\HandKernelSettings.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Settings\HandProcessorOptions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Sources\HandKernelPlayback.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Sources\IHandDataSource.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Sources\IPlaybackSource.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Sources\IPointCloudSource.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Sources\OnNewFrameData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Sources\PointCloudInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Visualizer\DepthOcclusionHandler.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Visualizer\DepthOcclusionManager.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Visualizer\HandPointCloudFromRealPoints.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Visualizer\IOcclusionGeometry.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Visualizer\NativeTextureHandler.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Visualizer\OcclusionGeometry.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Visualizer\OcclusionManager.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\Helpers\AlignToHeadset.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\Helpers\LerpTowards.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\Helpers\LookAt.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\Helpers\RandomRotation.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\LightDrawing\AppendParticles.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\LightDrawing\ResetParticles.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\LightDrawing\ResetParticlesAnim.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\SLAMInitializationGazePoint.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\SLAMInitializationProcess.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\SLAMParticles.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Scripts\SLAMUIManager.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\BaseSlamAnimation.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\BaseSlamGuide.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\BaseSlamUI.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\BaseSlamUIMessages.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\CalibrationStage.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\ObjectRotation.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SlamAnimation.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SlamGuide.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SlamInitializationType.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SlamMessage.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SLAMTracking\BaseSlamTrackingCanvasConfigurer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SLAMTracking\BaseSlamTrackingMessageController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SLAMTracking\ISlamTrackingCanvasConfigurer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SLAMTracking\ISlamTrackingMessageController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SLAMTracking\SlamTrackingCanvasConfigurer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SLAMTracking\SlamTrackingMessageController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SLAMTracking\SlamTrackingUIController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SLAMTracking\SlamTrackingUILoader.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SlamUI.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SlamUIMessages.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Scripts\SLAMUIMessageType.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Scripts\ExposePropertyAttribute.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Scripts\ILocalizer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Scripts\ISlamLocalizer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Scripts\MetaLocalization.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Scripts\MouseLocalizer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Scripts\RdfMatrixToPose.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Scripts\SlamFeedback.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Scripts\SlamInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\LocalizationEngine\Scripts\SlamLocalizer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\DragRotate.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\DragScale.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\DragTranslate.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\IInputWrapper.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\IMetaInputModule.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\InputWrapperRecorder.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\IPlatformMouse.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\KeySet\Chord.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\KeySet\IKeyboardWrapper.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\KeySet\KeySet.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\KeySet\Subchord.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\KeySet\UnityKeyboardWrapper.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\MetaInputModule.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\MetaMouse.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\MetaMouseConfig.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\MetaMouseCursorState.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\MetaMouseMessage.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\MouseAttractor.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\PlatformMouseFactory.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\PlaybackInputWrapper.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\RuntimeGameView.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\UnityInputWrapper.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\WindowsPlatformMouse.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Mouse\Scripts\WindowsUnityWindow.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\OpticalEngine\Scripts\PreRenderTexture.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\OpticalEngine\Scripts\SetupRenderTextures.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\OpticalEngine\Scripts\SetupRenderTexturesStereo.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\DefaultEnvironmentReset.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\EnvironmentConfiguration.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\EnvironmentDefaultInitializer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\EnvironmentInitializer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\EnvironmentInitializerFactory.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\EnvironmentProfileInitializer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\EnvironmentProfileType.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\IEnvironmentInitializer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\IEnvironmentReset.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\MetaReconstructionFactory.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Configuration\ReconstructionOnlyEnvironmentReset.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Constants\EnvironmentConstants.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\IMetaReconstruction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\DefaultEnvironmentInitializationFactory.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\DefaultEnvironmentWithReconstructionInitializationFactory.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\IEnvironmentInitialization.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\IEnvironmentInitializationFactory.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\MultiStepEnvironmentInitialization.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\NewDefaultEnvironmentInitialization.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\NewDefaultEnvironmentWithReconstructionInitialization.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\ReconstructionOnlyEnvironmentInitialization.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\SelectedEnvironmentInitialization.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\SelectedEnvironmentWithReconstructionInitialization.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\BaseEnvironmentScanController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\DefaultEnvironmentCleanerStep.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\DefaultEnvironmentProfileCreatorStep.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\EnvironmentInitializationStep.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\EnvironmentNewSlamMapInitializerStep.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\EnvironmentProfileSaverStep.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\EnvironmentReconstructionInitializerStep.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\EnvironmentReconstructionLoaderStep.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\EnvironmentReconstructionSaverStep.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\EnvironmentScanController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Initialization\Steps\EnvironmentSlamSaverStep.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Mesh\IMeshGenerator.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Mesh\IModelFileManipulator.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Mesh\MeshData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Mesh\MeshGenerator.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Mesh\OBJFileManipulator.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\MetaReconstruction.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\ReconstructionInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\ReconstructionTransition.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\EnvironmentProfile.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\EnvironmentProfileCollection.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\EnvironmentProfileFileIOStream.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\EnvironmentProfileJsonParser.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\EnvironmentProfileRepository.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\EnvironmentProfileVerifier.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\IEnvironmentProfile.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\IEnvironmentProfileIOStream.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\IEnvironmentProfileParser.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\IEnvironmentProfileRepository.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Repository\IEnvironmentProfileVerifier.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Selection\DefaultEnvironmentProfileSelector.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Selection\EnvironmentSelectionResultTypeEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Selection\IEnvironmentProfileSelector.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Selection\ISlamChecker.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Reconstruction\Scripts\Selection\SlamChecker.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Alignment\AlignmentFileFormat.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Alignment\AlignmentHandler.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Alignment\AssignMaps.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Alignment\StereoCameraAlignment.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Audio\AudioRandomizer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\CalibrationParameters\CalibrationParameterLoader.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\CalibrationParameters\CalibrationParameterLoaderAdditionalMatrices.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\CalibrationParameters\CalibrationParameterLoaderInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\CalibrationParameters\CalibrationParameters.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\CalibrationParameters\CalibrationProfile.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\CalibrationParameters\ICalibrationParameterLoader.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\CalibrationParameters\TestCalibrationParameterLoader.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\DllReferences.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\EventHandlers\EventHandlers.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\EventHandlers\IEventHandlers.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\IEventReceiver.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaBehaviour\BaseMetaBehaviour.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaBehaviour\MetaBehaviour.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaBehaviour\MetaBehaviourInternal.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaContext\BaseMetaContextBridge.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaContext\IMetaContext.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaContext\IMetaContextInternal.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaContext\MetaContext.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaContext\MetaContextBridge.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaDataStructs.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaDeviceInfo.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaFactory\MetaFactory.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaFactory\MetaFactoryPackage.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaManager\MetaManager.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaSensors.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Core\MetaSensorType.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Enum\Axis.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Enum\DirectionalAxis.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Enum\PressState.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Enum\UnityInitializationEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Enum\VirtualKeyCodes.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\BoolEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\ColliderEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\ColorEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\IGazeEndEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\IGazeStartEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\IPanelClickEventHandler.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\ITouchEventHandler.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\MetaInteractionDataEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\OnNewHand.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\PointerEventDataEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\PressStateEvent.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\Vector2Event.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Events\Vector3Event.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Extensions\AnimatorExtensions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Extensions\ColorExtensions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Extensions\QuaternionExtensions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Extensions\TransformExtensions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Extensions\Vector2Extensions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Extensions\Vector3Extensions.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Gaze.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Gizmos\AxisGizmo.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\HudLock.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\IAlignmentUpdateListener.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MetaAnalytics\MetaSdkAnalytics.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MetaBehaviours\MetaLocking.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MetaLocalizationSettings.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MetaPathVariables.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MetaSensorFailureMessages.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MetaSensorMessageController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MetaSensorUiController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MetaUtils.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MetaUtils\MultiRaycast.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MonoBehaviourUtilities\IMonoBehaviourProxy.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MonoBehaviourUtilities\MonoBehaviourProxy.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MonoBehaviourUtilities\PrefabInstantiator.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\MonoBehaviourUtilities\TemporalHelpAnimationMessageController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\OrbitalLock.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\RecordSensorData.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\DirectMode\MetaDirectMode.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\DirectMode\MetaDirectModeInformation.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\DirectMode\MetaDirectModeInformationDLLReference.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\DirectMode\MetaDirectModeInterop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\ExtendedMode\MetaExtendedModeController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\IMetaDisplayModeInformationProvider.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\MetaDisplayMode.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\MetaDisplayModeController.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\MetaDisplayModeInformationProvider.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\MetaObjectOutline\GameObjectVisualDecorator.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\MetaObjectOutline\InteractionObjectOutlineFactory.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\MetaObjectOutline\InteractionObjectOutlineSettings.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\MetaObjectOutline\OutlineObjectVisualDecorator.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Rendering\MetaObjectOutline\StereoCameraObjectOutline.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Threads\MonobehaviourThreadedJob.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Threads\ThreadedJob.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Threads\UnityThreadedJob.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Tween\TextMeshTweens.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Tween\TransformTweens.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Type\Bool3.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Type\Tuple.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Type\Win32Point.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Type\Win32Rect.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\AlignmentProfile.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\AlignmentUserSettings.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\Credentials.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\EventReceivingUserSettings.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\GameObjectUserSettings.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\IUserSettings.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\IUserSettingsDeveloper.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\IUserSettingsMeta.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\IUserSettingsPathHandler.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\TestingPlayerPrefs.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\UsernameUserSettingsPathHandler.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\UserSettings\UserSettings.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Utility\CurveAsset.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Utility\MathUtility.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Utility\ProceduralMeshUtility.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Utility\QuaternionUtility.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Utility\UnityWindowHandleUtility.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\Scripts\Utility\User32Interop.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\VirtualWebcam\Scripts\CameraSimulator.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\VirtualWebcam\Scripts\IWebcamStateChangeListener.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\VirtualWebcam\Scripts\PreviewWebcam.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\VirtualWebcam\Scripts\WebcamCommandBuffer.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\VirtualWebcam\Scripts\WebcamMirrorModes.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\VirtualWebcam\Scripts\WebcamOffCanvasHandler.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\VirtualWebcam\Scripts\WebcamPlugin.cs" />
+    <Compile Include="Assets\MetaSDK\Meta\VirtualWebcam\Scripts\WebcamUnityWindowHandler.cs" />
+    <Compile Include="Assets\MetaSDK\MetaExamples\Assets\Scripts\Buttons\AudioListenerVolumeView.cs" />
+    <Compile Include="Assets\MetaSDK\MetaExamples\Assets\Scripts\Buttons\CubeButtonEventReaction.cs" />
+    <Compile Include="Assets\MetaSDK\MetaExamples\Assets\Scripts\GazeExampleScript.cs" />
+    <Compile Include="Assets\Scripts\ScriptTesting.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Dependencies\models\face\haarcascade_frontalface_alt.xml" />
+    <None Include="Assets\MetaSDK\Meta\EventSystem\Shaders\UnlitTransparentTexture.shader" />
+    <None Include="Assets\MetaSDK\Meta\Hands\HandInput\Shaders\HandCursorSprite.shader" />
+    <None Include="Assets\MetaSDK\Meta\Hands\HandInput\Shaders\WriteDepthShaderBlendAlpha.shader" />
+    <None Include="Assets\MetaSDK\Meta\Hands\InteractionEngine\Visualizer\DepthMapOcclusion.shader" />
+    <None Include="Assets\MetaSDK\Meta\Hands\Resources\SpriteAlwaysOnTopShader.shader" />
+    <None Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Materials\ParticleBrush Additive.shader" />
+    <None Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM\Materials\UnlitTransparentColorDoublesided.shader" />
+    <None Include="Assets\MetaSDK\Meta\LocalizationEngine\Calibration UI\SLAM_UI\Materials\OverlayUI.shader" />
+    <None Include="Assets\MetaSDK\Meta\MotionEngine\Core\ComputeShaders\kMeansClustering\Resources\kMeansClustering.compute" />
+    <None Include="Assets\MetaSDK\Meta\MotionEngine\Feedback.txt" />
+    <None Include="Assets\MetaSDK\Meta\OpticalEngine\Materials\UnwarpShader.shader" />
+    <None Include="Assets\MetaSDK\Meta\Reconstruction\Shaders\OcclusionMesh.shader" />
+    <None Include="Assets\MetaSDK\Meta\Reconstruction\Shaders\Wireframe.shader" />
+    <None Include="Assets\MetaSDK\Meta\Resources\MetaOutlineResources\Shaders\UnlitOutlineOnlyTestShader.shader" />
+    <None Include="Assets\MetaSDK\Meta\SDK2Version.txt" />
+    <None Include="Assets\MetaSDK\Meta\VirtualWebcam\Shaders\CompositeWebcam.shader" />
+    <None Include="Assets\MetaSDK\Meta\VirtualWebcam\Shaders\RGBFeed.shader" />
+    <None Include="Assets\MetaSDK\MetaExamples\Assets\Audio\CameraShutterClick.txt" />
+    <None Include="Assets\MetaSDK\MetaExamples\Assets\Audio\RelaxingMusicCredits.txt" />
+    <None Include="Assets\MetaSDK\MetaExamples\Assets\Shaders\3DTextOneSided.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

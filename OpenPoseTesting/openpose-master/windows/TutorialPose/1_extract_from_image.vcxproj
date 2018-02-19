@@ -11,13 +11,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\examples\tutorial_pose\extract_from_image.cpp" />
+    <ClCompile Include="..\..\examples\tutorial_pose\dllExportFile.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DA43DA92-141D-4B91-80CE-8A2C5B377683}</ProjectGuid>
     <RootNamespace>1_user_asynchronous</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>extract_from_image</ProjectName>
+    <ProjectName>dllExportProj</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">

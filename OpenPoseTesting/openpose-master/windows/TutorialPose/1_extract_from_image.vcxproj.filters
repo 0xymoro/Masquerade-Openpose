@@ -11,7 +11,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\examples\tutorial_pose\extract_from_image.cpp">
+    <ClCompile Include="..\..\examples\tutorial_pose\dllExportFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
